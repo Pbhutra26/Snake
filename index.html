@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            width:100vw;
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            background-color: rgb(0, 0, 0);
+            align-items: center;
+            margin: 0;
+            flex-direction: row;
+            
+        }
+        .gameover{
+            color:white; display:inline;
+        }
+        .board{
+            
+            background-color: rgb(179 187 195 / 21%);
+    width: 100vmin;
+    height: 100vmin;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(21,1fr);
+    grid-template-columns: repeat(21,1fr);
+            
+        }
+        .snake{
+            
+            background-color:#f5f5f596;
+            border:5% solid rgb(63, 38, 38);
+            border-radius: 50%;
+        }
+        .food{
+            background-color: rgb(95 167 177 / 53%);
+    border: .25vmin solid #171313ad;
+    border-radius: 50%;
+        }
+        .scoreB{
+            align-self: flex-start;
+    /* justify-self: flex-start; */
+    margin: 0.8%;
+    margin-top: 3%;
+    /* margin-left: 150px; */
+    padding: .5%;
+    border: .25vmin solid white;
+    border-radius: 25%;
+    color: white;
+    display: flex;
+        }
+        button{
+          
+    color: white;
+    border: 2% solid white;
+    border-radius: 25%;
+    margin: 2%;
+   
+    padding: 1%;
+    text-decoration: none;
+    background-color: black;
+        }
+       
+
+    </style>
+    <script src="index.js" defer type="module"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snek</title>
+</head>
+<body>
+    <div class="scoreB">
+        <h3>Score:</h3>
+        <h3 class="score" >0</h3>
+    </div>
+    <div class="board">
+
+    </div>
+    
+</body>
+</html>
